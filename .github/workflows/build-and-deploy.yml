@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: "0 0 * * *"
 env:
   BASE_PATH: /design-system-react # GH pages lives at a subdir
 permissions:
